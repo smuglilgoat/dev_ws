@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
+  <xacro:property name="M_PI" value="3.1415926535897931"/>
 
     <joint name="laser_joint" type="fixed">
         <parent link="chassis"/>
@@ -47,6 +48,12 @@
                         <min_angle>-3.14</min_angle>
                         <max_angle>3.14</max_angle>
                     </horizontal>
+                    <vertical>
+                        <samples>360</samples>
+                        <resolution>1</resolution>
+                        <min_angle>-${15.0*M_PI/180.0}</min_angle>
+                        <max_angle>${15.0*M_PI/180.0}</max_angle>
+                    </vertical>
                 </scan>
                 <range>
                     <min>0.3</min>

@@ -1,0 +1,58 @@
+[0.017s] Invoking command in '/home/segula/dev_ws/build/velodyne_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/segula/dev_ws/src/velodyne_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/segula/dev_ws/install/velodyne_description
+[0.712s] -- The C compiler identification is GNU 11.4.0
+[1.365s] -- The CXX compiler identification is GNU 11.4.0
+[1.441s] -- Detecting C compiler ABI info
+[1.663s] -- Detecting C compiler ABI info - done
+[1.675s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.676s] -- Detecting C compile features
+[1.691s] -- Detecting C compile features - done
+[1.695s] -- Detecting CXX compiler ABI info
+[1.853s] -- Detecting CXX compiler ABI info - done
+[1.865s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.865s] -- Detecting CXX compile features
+[1.866s] -- Detecting CXX compile features - done
+[1.869s] -- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)
+[2.150s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.232s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.398s] -- Configuring done
+[2.405s] -- Generating done
+[2.407s] -- Build files have been written to: /home/segula/dev_ws/build/velodyne_description
+[2.417s] Invoked command in '/home/segula/dev_ws/build/velodyne_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/segula/dev_ws/src/velodyne_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/segula/dev_ws/install/velodyne_description
+[2.418s] Invoking command in '/home/segula/dev_ws/build/velodyne_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/segula/dev_ws/build/velodyne_description -- -j16 -l16
+[2.465s] Invoked command in '/home/segula/dev_ws/build/velodyne_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/segula/dev_ws/build/velodyne_description -- -j16 -l16
+[2.495s] Invoking command in '/home/segula/dev_ws/build/velodyne_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/segula/dev_ws/build/velodyne_description
+[2.504s] -- Install configuration: ""
+[2.505s] -- Execute custom install script
+[2.505s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/ament_index/resource_index/package_run_dependencies/velodyne_description
+[2.516s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/ament_index/resource_index/parent_prefix_path/velodyne_description
+[2.527s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.sh
+[2.536s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.dsv
+[2.546s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/path.sh
+[2.556s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/path.dsv
+[2.567s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.bash
+[2.576s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.sh
+[2.586s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.zsh
+[2.595s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.dsv
+[2.605s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/package.dsv
+[2.614s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/ament_index/resource_index/packages/velodyne_description
+[2.623s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig.cmake
+[2.632s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig-version.cmake
+[2.642s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/package.xml
+[2.652s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/launch/example-launch.py
+[2.663s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.dae
+[2.672s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.stl
+[2.682s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.dae
+[2.692s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.stl
+[2.701s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.dae
+[2.711s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.stl
+[2.721s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.dae
+[2.730s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.stl
+[2.740s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.dae
+[2.749s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.stl
+[2.759s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/rviz/example.rviz
+[2.769s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/HDL-32E.urdf.xacro
+[2.779s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-16.urdf.xacro
+[2.789s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-32C.urdf.xacro
+[2.799s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/example.urdf.xacro
+[2.810s] -- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/world/example.world
+[2.823s] Invoked command in '/home/segula/dev_ws/build/velodyne_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/segula/dev_ws/build/velodyne_description

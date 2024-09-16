@@ -1,0 +1,158 @@
+[0.014s] Invoking command in '/home/segula/dev_ws/build/velodyne_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/segula/dev_ws/src/velodyne_gazebo_plugins -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/segula/dev_ws/install/velodyne_gazebo_plugins
+[0.709s] -- The C compiler identification is GNU 11.4.0
+[1.362s] -- The CXX compiler identification is GNU 11.4.0
+[1.436s] -- Detecting C compiler ABI info
+[1.658s] -- Detecting C compiler ABI info - done
+[1.670s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.670s] -- Detecting C compile features
+[1.685s] -- Detecting C compile features - done
+[1.690s] -- Detecting CXX compiler ABI info
+[1.845s] -- Detecting CXX compiler ABI info - done
+[1.867s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.867s] -- Detecting CXX compile features
+[1.869s] -- Detecting CXX compile features - done
+[1.874s] -- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)
+[2.143s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.226s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.305s] -- Found gazebo_dev: 3.7.0 (/opt/ros/iron/share/gazebo_dev/cmake)
+[2.345s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.356s] -- Checking for module 'bullet>=2.82'
+[2.380s] --   Found bullet, version 3.05
+[2.700s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.783s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.929s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[3.520s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[3.674s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[3.741s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.822s] -- Searching for dependencies of ignition-math6
+[3.850s] -- Looking for OGRE...
+[3.851s] -- OGRE_PREFIX_WATCH changed.
+[3.863s] -- Checking for module 'OGRE'
+[3.886s] --   Found OGRE, version 1.9.0
+[3.951s] -- Found Ogre Ghadamon (1.9.0)
+[3.988s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[4.010s] -- Looking for OGRE_Paging...
+[4.021s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[4.021s] -- Looking for OGRE_Terrain...
+[4.032s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[4.032s] -- Looking for OGRE_Property...
+[4.066s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[4.067s] -- Looking for OGRE_RTShaderSystem...
+[4.078s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[4.078s] -- Looking for OGRE_Volume...
+[4.090s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[4.090s] -- Looking for OGRE_Overlay...
+[4.101s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[4.260s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.280s] -- Looking for ignition-transport8 -- found version 8.2.1
+[4.280s] -- Searching for dependencies of ignition-transport8
+[4.313s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[4.325s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[4.331s] -- Checking for module 'libzmq >= 4'
+[4.443s] --   Found libzmq , version 4.3.4
+[4.489s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[4.496s] -- Checking for module 'uuid'
+[4.521s] --   Found uuid, version 2.37.2
+[4.560s] -- Found UUID: TRUE  
+[4.568s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[4.568s] -- Searching for dependencies of ignition-msgs5
+[4.594s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.600s] -- Checking for module 'tinyxml2'
+[4.634s] --   Found tinyxml2, version 9.0.0
+[4.677s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[4.716s] -- Looking for ignition-common3 -- found version 3.14.0
+[4.718s] -- Searching for dependencies of ignition-common3
+[4.736s] -- Looking for dlfcn.h - found
+[4.738s] -- Looking for libdl - found
+[4.742s] -- Found DL: TRUE  
+[4.769s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[4.771s] -- Searching for <ignition-common3> component [graphics]
+[4.777s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[4.778s] -- Searching for dependencies of ignition-common3-graphics
+[4.779s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.796s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[4.798s] -- Searching for dependencies of ignition-fuel_tools4
+[4.967s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[5.002s] -- Checking for module 'jsoncpp'
+[5.024s] --   Found jsoncpp, version 1.9.5
+[5.079s] -- Found JSONCPP: TRUE  
+[5.093s] -- Checking for module 'libzip'
+[5.123s] --   Found libzip, version 1.7.3
+[5.178s] -- Found ZIP: TRUE  
+[5.179s] -- Looking for ignition-common3 -- found version 3.14.0
+[5.180s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.181s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.203s] -- Gazebo version: 11.10
+[5.204s] -- Checking for module 'tbb'
+[5.227s] --   Found tbb, version 2021.5.0
+[5.283s] -- Found gazebo_ros: 3.7.0 (/opt/ros/iron/share/gazebo_ros/cmake)
+[5.356s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[5.371s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[5.391s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.615s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[5.618s] -- Found rmw_fastrtps_cpp: 7.1.4 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[5.772s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.800s] -- Found FastRTPS: /opt/ros/iron/include  
+[5.850s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.058s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/iron/share/gazebo_msgs/cmake)
+[6.651s] -- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)
+[6.761s] -- Found tf2: 0.31.8 (/opt/ros/iron/share/tf2/cmake)
+[6.917s] -- Configuring done
+[6.976s] -- Generating done
+[6.979s] -- Build files have been written to: /home/segula/dev_ws/build/velodyne_gazebo_plugins
+[6.997s] Invoked command in '/home/segula/dev_ws/build/velodyne_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/segula/dev_ws/src/velodyne_gazebo_plugins -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/segula/dev_ws/install/velodyne_gazebo_plugins
+[7.001s] Invoking command in '/home/segula/dev_ws/build/velodyne_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/segula/dev_ws/build/velodyne_gazebo_plugins -- -j16 -l16
+[7.067s] [ 50%] [32mBuilding CXX object CMakeFiles/gazebo_ros_velodyne_laser.dir/src/GazeboRosVelodyneLaser.cpp.o[0m
+[27.636s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[27.637s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:43[m[K,
+[27.637s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[27.637s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[27.637s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[27.637s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[27.638s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[27.638s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[27.638s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[27.638s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[27.638s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.638s]                  from [01m[K/opt/ros/iron/include/gazebo_ros/node.hpp:18[m[K,
+[27.638s]                  from [01m[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h:53[m[K,
+[27.639s]                  from [01m[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:35[m[K:
+[27.639s] [01m[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:[m[K In member function ‘[01m[Kvirtual void gazebo::GazeboRosVelodyneLaser::Load(gazebo::sensors::SensorPtr, sdf::v9::ElementPtr)[m[K’:
+[27.639s] [01m[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:40:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects a matching ‘[01m[Kchar*[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[27.639s]   295 |   RCLCPP_INFO(ros_node_->get_logger(), [01;35m[K"Velodyne %slaser plugin ready"[m[K);
+[27.639s]       |                                        [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[27.639s] [01m[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:51:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[27.640s]   295 |   RCLCPP_INFO(ros_node_->get_logger(), "Velodyne [01;36m[K%s[m[Klaser plugin ready");
+[27.640s]       |                                                  [01;36m[K~^[m[K
+[27.640s]       |                                                   [01;36m[K|[m[K
+[27.640s]       |                                                   [01;36m[Kchar*[m[K
+[32.321s] [100%] [32m[1mLinking CXX shared library libgazebo_ros_velodyne_laser.so[0m
+[33.004s] [100%] Built target gazebo_ros_velodyne_laser
+[33.016s] Invoked command in '/home/segula/dev_ws/build/velodyne_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/segula/dev_ws/build/velodyne_gazebo_plugins -- -j16 -l16
+[33.050s] Invoking command in '/home/segula/dev_ws/build/velodyne_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/segula/dev_ws/build/velodyne_gazebo_plugins
+[33.058s] -- Install configuration: ""
+[33.059s] -- Execute custom install script
+[33.059s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.sh
+[33.070s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.dsv
+[33.080s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/velodyne_gazebo_plugins
+[33.089s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/velodyne_gazebo_plugins
+[33.099s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.sh
+[33.110s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.dsv
+[33.120s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.sh
+[33.129s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.dsv
+[33.141s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.bash
+[33.150s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.sh
+[33.159s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.zsh
+[33.168s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.dsv
+[33.179s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.dsv
+[33.189s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/ament_index/resource_index/packages/velodyne_gazebo_plugins
+[33.198s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+[33.207s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[33.216s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[33.224s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig.cmake
+[33.234s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig-version.cmake
+[33.242s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.xml
+[33.254s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h
+[33.264s] -- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/lib/libgazebo_ros_velodyne_laser.so
+[33.276s] Invoked command in '/home/segula/dev_ws/build/velodyne_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/segula/dev_ws/build/velodyne_gazebo_plugins

@@ -1,0 +1,52 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/segula/dev_ws/build/velodyne_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/ament_index/resource_index/package_run_dependencies/velodyne_description
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/ament_index/resource_index/parent_prefix_path/velodyne_description
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/path.sh
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/path.dsv
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.bash
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.sh
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.zsh
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.dsv
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/package.dsv
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/ament_index/resource_index/packages/velodyne_description
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig.cmake
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig-version.cmake
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/package.xml
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/launch/example-launch.py
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.dae
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.stl
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.dae
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.stl
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.dae
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.stl
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.dae
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.stl
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.dae
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.stl
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/rviz/example.rviz
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/HDL-32E.urdf.xacro
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-16.urdf.xacro
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-32C.urdf.xacro
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/example.urdf.xacro
+-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/world/example.world

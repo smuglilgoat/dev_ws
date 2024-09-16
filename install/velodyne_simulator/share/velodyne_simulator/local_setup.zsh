@@ -1,0 +1,1 @@
+/home/segula/dev_ws/build/velodyne_simulator/ament_cmake_environment_hooks/local_setup.zsh

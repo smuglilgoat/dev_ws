@@ -1,0 +1,683 @@
+[0.000000] (-) TimerEvent: {}
+[0.000524] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict()}
+[0.000738] (velodyne_description) JobQueued: {'identifier': 'velodyne_description', 'dependencies': OrderedDict()}
+[0.000805] (velodyne_gazebo_plugins) JobQueued: {'identifier': 'velodyne_gazebo_plugins', 'dependencies': OrderedDict()}
+[0.000906] (velodyne_simulator) JobQueued: {'identifier': 'velodyne_simulator', 'dependencies': OrderedDict([('velodyne_description', '/home/segula/dev_ws/install/velodyne_description'), ('velodyne_gazebo_plugins', '/home/segula/dev_ws/install/velodyne_gazebo_plugins')])}
+[0.000968] (velodyne_description) JobStarted: {'identifier': 'velodyne_description'}
+[0.006697] (velodyne_gazebo_plugins) JobStarted: {'identifier': 'velodyne_gazebo_plugins'}
+[0.010323] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.015304] (velodyne_description) JobProgress: {'identifier': 'velodyne_description', 'progress': 'cmake'}
+[0.015690] (velodyne_description) Command: {'cmd': ['/usr/bin/cmake', '/home/segula/dev_ws/src/velodyne_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/segula/dev_ws/install/velodyne_description'], 'cwd': '/home/segula/dev_ws/build/velodyne_description', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/velodyne_description'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[0.019238] (velodyne_gazebo_plugins) JobProgress: {'identifier': 'velodyne_gazebo_plugins', 'progress': 'cmake'}
+[0.019381] (velodyne_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '/home/segula/dev_ws/src/velodyne_gazebo_plugins', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/segula/dev_ws/install/velodyne_gazebo_plugins'], 'cwd': '/home/segula/dev_ws/build/velodyne_gazebo_plugins', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/velodyne_gazebo_plugins'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[0.022295] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'cmake'}
+[0.022978] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'build'}
+[0.023726] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/segula/dev_ws/build/articubot_one', '--', '-j16', '-l16'], 'cwd': '/home/segula/dev_ws/build/articubot_one', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/articubot_one'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[0.058892] (articubot_one) CommandEnded: {'returncode': 0}
+[0.081143] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'install'}
+[0.088846] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/segula/dev_ws/build/articubot_one'], 'cwd': '/home/segula/dev_ws/build/articubot_one', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/articubot_one'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[0.095747] (articubot_one) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.096229] (articubot_one) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.096777] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml\n'}
+[0.096933] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml\n'}
+[0.097039] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz\n'}
+[0.097179] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/empty.yaml\n'}
+[0.097288] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml\n'}
+[0.097393] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/gazebo_params.yaml\n'}
+[0.097506] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/joystick.yaml\n'}
+[0.097617] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/main.rviz\n'}
+[0.097719] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/map.rviz\n'}
+[0.097813] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml\n'}
+[0.097915] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml\n'}
+[0.098009] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml\n'}
+[0.098183] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml\n'}
+[0.098348] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz\n'}
+[0.098481] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/description/camera.xacro\n'}
+[0.098593] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro\n'}
+[0.098702] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/description/face.xacro\n'}
+[0.098809] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro\n'}
+[0.098914] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro\n'}
+[0.099021] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/description/lidar.xacro\n'}
+[0.099164] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro\n'}
+[0.099286] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro\n'}
+[0.099393] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro\n'}
+[0.099602] (-) TimerEvent: {}
+[0.099739] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py\n'}
+[0.099866] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py\n'}
+[0.099993] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py\n'}
+[0.100110] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py\n'}
+[0.100219] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py\n'}
+[0.100333] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py\n'}
+[0.100440] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py\n'}
+[0.100543] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py\n'}
+[0.100652] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py\n'}
+[0.100749] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py\n'}
+[0.100918] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/worlds/empty.world\n'}
+[0.101026] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world\n'}
+[0.101266] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one\n'}
+[0.101444] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one\n'}
+[0.101616] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh\n'}
+[0.101776] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv\n'}
+[0.101941] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/environment/path.sh\n'}
+[0.102105] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/environment/path.dsv\n'}
+[0.102267] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/local_setup.bash\n'}
+[0.102419] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/local_setup.sh\n'}
+[0.102575] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/local_setup.zsh\n'}
+[0.102726] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/local_setup.dsv\n'}
+[0.102837] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/articubot_one/share/articubot_one/package.dsv\n'}
+[0.112613] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one\n'}
+[0.113029] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake\n'}
+[0.113394] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake\n'}
+[0.113729] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/segula/dev_ws/install/articubot_one/share/articubot_one/package.xml\n'}
+[0.115209] (articubot_one) CommandEnded: {'returncode': 0}
+[0.177891] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[0.199738] (-) TimerEvent: {}
+[0.300156] (-) TimerEvent: {}
+[0.400583] (-) TimerEvent: {}
+[0.501061] (-) TimerEvent: {}
+[0.601515] (-) TimerEvent: {}
+[0.701983] (-) TimerEvent: {}
+[0.713120] (velodyne_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.716103] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.802139] (-) TimerEvent: {}
+[0.902587] (-) TimerEvent: {}
+[1.003059] (-) TimerEvent: {}
+[1.103564] (-) TimerEvent: {}
+[1.204044] (-) TimerEvent: {}
+[1.304533] (-) TimerEvent: {}
+[1.366169] (velodyne_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.368800] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.404703] (-) TimerEvent: {}
+[1.442251] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.443030] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.504897] (-) TimerEvent: {}
+[1.605433] (-) TimerEvent: {}
+[1.664287] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.664923] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.675766] (velodyne_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.676494] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.676820] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.677163] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.692215] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.692495] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.696228] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.696745] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.705534] (-) TimerEvent: {}
+[1.805966] (-) TimerEvent: {}
+[1.851710] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.853950] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.865753] (velodyne_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.866157] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.866873] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.870132] (velodyne_description) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[1.873738] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.874520] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.875754] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.881271] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[1.906130] (-) TimerEvent: {}
+[2.006572] (-) TimerEvent: {}
+[2.107055] (-) TimerEvent: {}
+[2.150338] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.150956] (velodyne_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.207217] (-) TimerEvent: {}
+[2.233138] (velodyne_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.233470] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.307377] (-) TimerEvent: {}
+[2.312256] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found gazebo_dev: 3.7.0 (/opt/ros/iron/share/gazebo_dev/cmake)\n'}
+[2.351758] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[2.363243] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[2.386695] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[2.398398] (velodyne_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.405815] (velodyne_description) StdoutLine: {'line': b'-- Generating done\n'}
+[2.407478] (-) TimerEvent: {}
+[2.407955] (velodyne_description) StdoutLine: {'line': b'-- Build files have been written to: /home/segula/dev_ws/build/velodyne_description\n'}
+[2.416643] (velodyne_description) CommandEnded: {'returncode': 0}
+[2.418578] (velodyne_description) JobProgress: {'identifier': 'velodyne_description', 'progress': 'build'}
+[2.418702] (velodyne_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/segula/dev_ws/build/velodyne_description', '--', '-j16', '-l16'], 'cwd': '/home/segula/dev_ws/build/velodyne_description', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/velodyne_description'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[2.465323] (velodyne_description) CommandEnded: {'returncode': 0}
+[2.495016] (velodyne_description) JobProgress: {'identifier': 'velodyne_description', 'progress': 'install'}
+[2.495504] (velodyne_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/segula/dev_ws/build/velodyne_description'], 'cwd': '/home/segula/dev_ws/build/velodyne_description', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/velodyne_description'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[2.504880] (velodyne_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.505579] (velodyne_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.505982] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/ament_index/resource_index/package_run_dependencies/velodyne_description\n'}
+[2.507559] (-) TimerEvent: {}
+[2.516715] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/ament_index/resource_index/parent_prefix_path/velodyne_description\n'}
+[2.527641] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.sh\n'}
+[2.537351] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.dsv\n'}
+[2.547265] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/path.sh\n'}
+[2.556969] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/environment/path.dsv\n'}
+[2.567504] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.bash\n'}
+[2.577086] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.sh\n'}
+[2.586482] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.zsh\n'}
+[2.595729] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/local_setup.dsv\n'}
+[2.606090] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/package.dsv\n'}
+[2.607709] (-) TimerEvent: {}
+[2.615133] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/ament_index/resource_index/packages/velodyne_description\n'}
+[2.624237] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig.cmake\n'}
+[2.632836] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig-version.cmake\n'}
+[2.642972] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/package.xml\n'}
+[2.652731] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/launch/example-launch.py\n'}
+[2.663684] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.dae\n'}
+[2.673203] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.stl\n'}
+[2.682521] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.dae\n'}
+[2.692431] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.stl\n'}
+[2.701963] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.dae\n'}
+[2.707340] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[2.707795] (-) TimerEvent: {}
+[2.712047] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.stl\n'}
+[2.721581] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.dae\n'}
+[2.731033] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.stl\n'}
+[2.740379] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.dae\n'}
+[2.749926] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.stl\n'}
+[2.759706] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/rviz/example.rviz\n'}
+[2.769435] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/HDL-32E.urdf.xacro\n'}
+[2.779641] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-16.urdf.xacro\n'}
+[2.789661] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-32C.urdf.xacro\n'}
+[2.790501] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[2.799913] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/urdf/example.urdf.xacro\n'}
+[2.807909] (-) TimerEvent: {}
+[2.810614] (velodyne_description) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_description/share/velodyne_description/world/example.world\n'}
+[2.823768] (velodyne_description) CommandEnded: {'returncode': 0}
+[2.867259] (velodyne_description) JobEnded: {'identifier': 'velodyne_description', 'rc': 0}
+[2.908082] (-) TimerEvent: {}
+[2.936384] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[3.008233] (-) TimerEvent: {}
+[3.108595] (-) TimerEvent: {}
+[3.208993] (-) TimerEvent: {}
+[3.309461] (-) TimerEvent: {}
+[3.409928] (-) TimerEvent: {}
+[3.510370] (-) TimerEvent: {}
+[3.526778] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[3.610513] (-) TimerEvent: {}
+[3.680379] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[3.710689] (-) TimerEvent: {}
+[3.747573] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.810869] (-) TimerEvent: {}
+[3.828947] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[3.856583] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[3.857797] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[3.870044] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[3.893177] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[3.910992] (-) TimerEvent: {}
+[3.957447] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[3.994927] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[4.011144] (-) TimerEvent: {}
+[4.017097] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[4.027469] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[4.027781] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[4.038790] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[4.039111] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[4.073217] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[4.073521] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[4.085115] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[4.085426] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[4.096794] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[4.097203] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[4.108011] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[4.111290] (-) TimerEvent: {}
+[4.211685] (-) TimerEvent: {}
+[4.267232] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.286969] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[4.287488] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[4.311825] (-) TimerEvent: {}
+[4.319780] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[4.332194] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[4.338407] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[4.411993] (-) TimerEvent: {}
+[4.449988] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[4.495658] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[4.503243] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[4.512148] (-) TimerEvent: {}
+[4.527689] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[4.567283] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[4.574560] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.575235] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[4.600559] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.607064] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[4.612296] (-) TimerEvent: {}
+[4.640520] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[4.683444] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.712457] (-) TimerEvent: {}
+[4.723148] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[4.724554] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[4.742777] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[4.744721] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[4.748539] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[4.776260] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[4.778229] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[4.783686] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[4.785092] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[4.786149] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.803146] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[4.804489] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[4.812598] (-) TimerEvent: {}
+[4.913020] (-) TimerEvent: {}
+[4.974285] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[5.008605] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[5.013186] (-) TimerEvent: {}
+[5.031149] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[5.085623] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[5.100012] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[5.113308] (-) TimerEvent: {}
+[5.129647] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[5.184693] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[5.186034] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[5.187180] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.188346] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.209715] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[5.210640] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[5.213435] (-) TimerEvent: {}
+[5.233571] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[5.290278] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/iron/share/gazebo_ros/cmake)\n'}
+[5.313569] (-) TimerEvent: {}
+[5.363375] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[5.378187] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[5.397550] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.413705] (-) TimerEvent: {}
+[5.420963] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.513849] (-) TimerEvent: {}
+[5.614214] (-) TimerEvent: {}
+[5.621732] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[5.624521] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.4 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.714366] (-) TimerEvent: {}
+[5.778569] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.806507] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/iron/include  \n'}
+[5.814507] (-) TimerEvent: {}
+[5.857213] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.914646] (-) TimerEvent: {}
+[6.014988] (-) TimerEvent: {}
+[6.064738] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.7.0 (/opt/ros/iron/share/gazebo_msgs/cmake)\n'}
+[6.115138] (-) TimerEvent: {}
+[6.215497] (-) TimerEvent: {}
+[6.315866] (-) TimerEvent: {}
+[6.416252] (-) TimerEvent: {}
+[6.516613] (-) TimerEvent: {}
+[6.616984] (-) TimerEvent: {}
+[6.657856] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)\n'}
+[6.717136] (-) TimerEvent: {}
+[6.768369] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found tf2: 0.31.8 (/opt/ros/iron/share/tf2/cmake)\n'}
+[6.817277] (-) TimerEvent: {}
+[6.917652] (-) TimerEvent: {}
+[6.923638] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.982987] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Generating done\n'}
+[6.986112] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Build files have been written to: /home/segula/dev_ws/build/velodyne_gazebo_plugins\n'}
+[7.003184] (velodyne_gazebo_plugins) CommandEnded: {'returncode': 0}
+[7.004885] (velodyne_gazebo_plugins) JobProgress: {'identifier': 'velodyne_gazebo_plugins', 'progress': 'build'}
+[7.007014] (velodyne_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/segula/dev_ws/build/velodyne_gazebo_plugins', '--', '-j16', '-l16'], 'cwd': '/home/segula/dev_ws/build/velodyne_gazebo_plugins', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/velodyne_gazebo_plugins'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[7.017793] (-) TimerEvent: {}
+[7.073899] (velodyne_gazebo_plugins) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_ros_velodyne_laser.dir/src/GazeboRosVelodyneLaser.cpp.o\x1b[0m\n'}
+[7.117947] (-) TimerEvent: {}
+[7.218410] (-) TimerEvent: {}
+[7.318800] (-) TimerEvent: {}
+[7.419217] (-) TimerEvent: {}
+[7.519632] (-) TimerEvent: {}
+[7.620025] (-) TimerEvent: {}
+[7.720440] (-) TimerEvent: {}
+[7.820867] (-) TimerEvent: {}
+[7.921283] (-) TimerEvent: {}
+[8.021698] (-) TimerEvent: {}
+[8.122105] (-) TimerEvent: {}
+[8.222496] (-) TimerEvent: {}
+[8.322928] (-) TimerEvent: {}
+[8.423379] (-) TimerEvent: {}
+[8.523800] (-) TimerEvent: {}
+[8.624307] (-) TimerEvent: {}
+[8.724779] (-) TimerEvent: {}
+[8.825175] (-) TimerEvent: {}
+[8.925602] (-) TimerEvent: {}
+[9.026022] (-) TimerEvent: {}
+[9.126415] (-) TimerEvent: {}
+[9.226863] (-) TimerEvent: {}
+[9.327314] (-) TimerEvent: {}
+[9.427703] (-) TimerEvent: {}
+[9.528128] (-) TimerEvent: {}
+[9.628552] (-) TimerEvent: {}
+[9.728999] (-) TimerEvent: {}
+[9.829388] (-) TimerEvent: {}
+[9.929902] (-) TimerEvent: {}
+[10.030429] (-) TimerEvent: {}
+[10.130919] (-) TimerEvent: {}
+[10.231415] (-) TimerEvent: {}
+[10.331926] (-) TimerEvent: {}
+[10.432386] (-) TimerEvent: {}
+[10.532800] (-) TimerEvent: {}
+[10.633201] (-) TimerEvent: {}
+[10.733627] (-) TimerEvent: {}
+[10.834089] (-) TimerEvent: {}
+[10.934533] (-) TimerEvent: {}
+[11.035015] (-) TimerEvent: {}
+[11.135455] (-) TimerEvent: {}
+[11.235884] (-) TimerEvent: {}
+[11.336342] (-) TimerEvent: {}
+[11.436755] (-) TimerEvent: {}
+[11.537185] (-) TimerEvent: {}
+[11.637641] (-) TimerEvent: {}
+[11.738112] (-) TimerEvent: {}
+[11.838536] (-) TimerEvent: {}
+[11.938950] (-) TimerEvent: {}
+[12.039409] (-) TimerEvent: {}
+[12.139889] (-) TimerEvent: {}
+[12.240341] (-) TimerEvent: {}
+[12.340760] (-) TimerEvent: {}
+[12.441178] (-) TimerEvent: {}
+[12.541557] (-) TimerEvent: {}
+[12.641994] (-) TimerEvent: {}
+[12.742444] (-) TimerEvent: {}
+[12.842924] (-) TimerEvent: {}
+[12.943444] (-) TimerEvent: {}
+[13.043867] (-) TimerEvent: {}
+[13.144369] (-) TimerEvent: {}
+[13.244834] (-) TimerEvent: {}
+[13.345303] (-) TimerEvent: {}
+[13.445837] (-) TimerEvent: {}
+[13.546310] (-) TimerEvent: {}
+[13.646777] (-) TimerEvent: {}
+[13.747316] (-) TimerEvent: {}
+[13.847769] (-) TimerEvent: {}
+[13.948180] (-) TimerEvent: {}
+[14.048615] (-) TimerEvent: {}
+[14.149099] (-) TimerEvent: {}
+[14.249577] (-) TimerEvent: {}
+[14.350028] (-) TimerEvent: {}
+[14.450492] (-) TimerEvent: {}
+[14.550963] (-) TimerEvent: {}
+[14.651436] (-) TimerEvent: {}
+[14.751905] (-) TimerEvent: {}
+[14.852352] (-) TimerEvent: {}
+[14.952809] (-) TimerEvent: {}
+[15.053280] (-) TimerEvent: {}
+[15.153710] (-) TimerEvent: {}
+[15.254156] (-) TimerEvent: {}
+[15.354581] (-) TimerEvent: {}
+[15.454997] (-) TimerEvent: {}
+[15.555479] (-) TimerEvent: {}
+[15.655987] (-) TimerEvent: {}
+[15.756505] (-) TimerEvent: {}
+[15.856917] (-) TimerEvent: {}
+[15.957410] (-) TimerEvent: {}
+[16.057904] (-) TimerEvent: {}
+[16.158372] (-) TimerEvent: {}
+[16.258846] (-) TimerEvent: {}
+[16.359363] (-) TimerEvent: {}
+[16.459822] (-) TimerEvent: {}
+[16.560301] (-) TimerEvent: {}
+[16.660774] (-) TimerEvent: {}
+[16.761264] (-) TimerEvent: {}
+[16.861785] (-) TimerEvent: {}
+[16.962285] (-) TimerEvent: {}
+[17.062753] (-) TimerEvent: {}
+[17.163181] (-) TimerEvent: {}
+[17.263683] (-) TimerEvent: {}
+[17.364153] (-) TimerEvent: {}
+[17.464627] (-) TimerEvent: {}
+[17.565121] (-) TimerEvent: {}
+[17.665558] (-) TimerEvent: {}
+[17.765998] (-) TimerEvent: {}
+[17.866433] (-) TimerEvent: {}
+[17.966863] (-) TimerEvent: {}
+[18.067350] (-) TimerEvent: {}
+[18.167877] (-) TimerEvent: {}
+[18.268337] (-) TimerEvent: {}
+[18.368767] (-) TimerEvent: {}
+[18.469323] (-) TimerEvent: {}
+[18.569832] (-) TimerEvent: {}
+[18.670346] (-) TimerEvent: {}
+[18.770881] (-) TimerEvent: {}
+[18.871435] (-) TimerEvent: {}
+[18.971933] (-) TimerEvent: {}
+[19.072486] (-) TimerEvent: {}
+[19.173007] (-) TimerEvent: {}
+[19.273559] (-) TimerEvent: {}
+[19.374089] (-) TimerEvent: {}
+[19.474625] (-) TimerEvent: {}
+[19.575153] (-) TimerEvent: {}
+[19.675594] (-) TimerEvent: {}
+[19.776086] (-) TimerEvent: {}
+[19.876569] (-) TimerEvent: {}
+[19.977093] (-) TimerEvent: {}
+[20.077563] (-) TimerEvent: {}
+[20.178035] (-) TimerEvent: {}
+[20.278534] (-) TimerEvent: {}
+[20.379011] (-) TimerEvent: {}
+[20.479508] (-) TimerEvent: {}
+[20.580041] (-) TimerEvent: {}
+[20.680555] (-) TimerEvent: {}
+[20.781061] (-) TimerEvent: {}
+[20.881545] (-) TimerEvent: {}
+[20.981959] (-) TimerEvent: {}
+[21.082452] (-) TimerEvent: {}
+[21.182907] (-) TimerEvent: {}
+[21.283421] (-) TimerEvent: {}
+[21.383896] (-) TimerEvent: {}
+[21.484393] (-) TimerEvent: {}
+[21.584864] (-) TimerEvent: {}
+[21.685367] (-) TimerEvent: {}
+[21.785852] (-) TimerEvent: {}
+[21.886351] (-) TimerEvent: {}
+[21.986827] (-) TimerEvent: {}
+[22.087319] (-) TimerEvent: {}
+[22.187814] (-) TimerEvent: {}
+[22.288327] (-) TimerEvent: {}
+[22.388817] (-) TimerEvent: {}
+[22.489271] (-) TimerEvent: {}
+[22.589728] (-) TimerEvent: {}
+[22.690214] (-) TimerEvent: {}
+[22.790670] (-) TimerEvent: {}
+[22.891166] (-) TimerEvent: {}
+[22.991625] (-) TimerEvent: {}
+[23.092140] (-) TimerEvent: {}
+[23.192603] (-) TimerEvent: {}
+[23.293107] (-) TimerEvent: {}
+[23.393570] (-) TimerEvent: {}
+[23.494042] (-) TimerEvent: {}
+[23.594537] (-) TimerEvent: {}
+[23.695048] (-) TimerEvent: {}
+[23.795556] (-) TimerEvent: {}
+[23.896029] (-) TimerEvent: {}
+[23.996533] (-) TimerEvent: {}
+[24.096994] (-) TimerEvent: {}
+[24.197486] (-) TimerEvent: {}
+[24.297914] (-) TimerEvent: {}
+[24.398421] (-) TimerEvent: {}
+[24.498878] (-) TimerEvent: {}
+[24.599386] (-) TimerEvent: {}
+[24.699856] (-) TimerEvent: {}
+[24.800354] (-) TimerEvent: {}
+[24.900838] (-) TimerEvent: {}
+[25.001344] (-) TimerEvent: {}
+[25.101830] (-) TimerEvent: {}
+[25.202324] (-) TimerEvent: {}
+[25.302789] (-) TimerEvent: {}
+[25.403288] (-) TimerEvent: {}
+[25.503757] (-) TimerEvent: {}
+[25.604240] (-) TimerEvent: {}
+[25.704709] (-) TimerEvent: {}
+[25.805195] (-) TimerEvent: {}
+[25.905660] (-) TimerEvent: {}
+[26.006153] (-) TimerEvent: {}
+[26.106638] (-) TimerEvent: {}
+[26.207146] (-) TimerEvent: {}
+[26.307620] (-) TimerEvent: {}
+[26.408128] (-) TimerEvent: {}
+[26.508588] (-) TimerEvent: {}
+[26.609054] (-) TimerEvent: {}
+[26.709533] (-) TimerEvent: {}
+[26.809999] (-) TimerEvent: {}
+[26.910500] (-) TimerEvent: {}
+[27.010962] (-) TimerEvent: {}
+[27.111455] (-) TimerEvent: {}
+[27.211902] (-) TimerEvent: {}
+[27.312411] (-) TimerEvent: {}
+[27.412880] (-) TimerEvent: {}
+[27.513391] (-) TimerEvent: {}
+[27.613869] (-) TimerEvent: {}
+[27.643261] (velodyne_gazebo_plugins) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[27.643630] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:43\x1b[m\x1b[K,\n'}
+[27.643822] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[27.643993] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[27.644204] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[27.644372] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[27.644532] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[27.644704] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[27.644857] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[27.645010] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[27.645183] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167\x1b[m\x1b[K,\n'}
+[27.645337] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/gazebo_ros/node.hpp:18\x1b[m\x1b[K,\n'}
+[27.645486] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h:53\x1b[m\x1b[K,\n'}
+[27.645637] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:35\x1b[m\x1b[K:\n'}
+[27.645787] (velodyne_gazebo_plugins) StderrLine: {'line': b'\x1b[01m\x1b[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void gazebo::GazeboRosVelodyneLaser::Load(gazebo::sensors::SensorPtr, sdf::v9::ElementPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.645942] (velodyne_gazebo_plugins) StderrLine: {'line': b'\x1b[01m\x1b[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects a matching \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 argument [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[27.646111] (velodyne_gazebo_plugins) StderrLine: {'line': b'  295 |   RCLCPP_INFO(ros_node_->get_logger(), \x1b[01;35m\x1b[K"Velodyne %slaser plugin ready"\x1b[m\x1b[K);\n'}
+[27.646275] (velodyne_gazebo_plugins) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.646441] (velodyne_gazebo_plugins) StderrLine: {'line': b'\x1b[01m\x1b[K/home/segula/dev_ws/src/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[27.646595] (velodyne_gazebo_plugins) StderrLine: {'line': b'  295 |   RCLCPP_INFO(ros_node_->get_logger(), "Velodyne \x1b[01;36m\x1b[K%s\x1b[m\x1b[Klaser plugin ready");\n'}
+[27.646741] (velodyne_gazebo_plugins) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[27.646884] (velodyne_gazebo_plugins) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[27.647028] (velodyne_gazebo_plugins) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[27.714032] (-) TimerEvent: {}
+[27.814538] (-) TimerEvent: {}
+[27.915014] (-) TimerEvent: {}
+[28.015514] (-) TimerEvent: {}
+[28.115981] (-) TimerEvent: {}
+[28.216572] (-) TimerEvent: {}
+[28.317039] (-) TimerEvent: {}
+[28.417546] (-) TimerEvent: {}
+[28.518015] (-) TimerEvent: {}
+[28.618513] (-) TimerEvent: {}
+[28.718981] (-) TimerEvent: {}
+[28.819482] (-) TimerEvent: {}
+[28.919954] (-) TimerEvent: {}
+[29.020463] (-) TimerEvent: {}
+[29.120932] (-) TimerEvent: {}
+[29.221453] (-) TimerEvent: {}
+[29.321922] (-) TimerEvent: {}
+[29.422418] (-) TimerEvent: {}
+[29.522884] (-) TimerEvent: {}
+[29.623384] (-) TimerEvent: {}
+[29.723872] (-) TimerEvent: {}
+[29.824363] (-) TimerEvent: {}
+[29.924839] (-) TimerEvent: {}
+[30.025351] (-) TimerEvent: {}
+[30.125801] (-) TimerEvent: {}
+[30.226233] (-) TimerEvent: {}
+[30.326685] (-) TimerEvent: {}
+[30.427160] (-) TimerEvent: {}
+[30.527595] (-) TimerEvent: {}
+[30.628048] (-) TimerEvent: {}
+[30.728525] (-) TimerEvent: {}
+[30.828979] (-) TimerEvent: {}
+[30.929458] (-) TimerEvent: {}
+[31.029916] (-) TimerEvent: {}
+[31.130374] (-) TimerEvent: {}
+[31.230798] (-) TimerEvent: {}
+[31.331328] (-) TimerEvent: {}
+[31.431835] (-) TimerEvent: {}
+[31.532356] (-) TimerEvent: {}
+[31.632856] (-) TimerEvent: {}
+[31.733389] (-) TimerEvent: {}
+[31.833873] (-) TimerEvent: {}
+[31.934435] (-) TimerEvent: {}
+[32.034954] (-) TimerEvent: {}
+[32.135527] (-) TimerEvent: {}
+[32.236105] (-) TimerEvent: {}
+[32.328170] (velodyne_gazebo_plugins) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_ros_velodyne_laser.so\x1b[0m\n'}
+[32.336226] (-) TimerEvent: {}
+[32.436753] (-) TimerEvent: {}
+[32.537340] (-) TimerEvent: {}
+[32.637899] (-) TimerEvent: {}
+[32.738485] (-) TimerEvent: {}
+[32.839040] (-) TimerEvent: {}
+[32.939624] (-) TimerEvent: {}
+[33.010312] (velodyne_gazebo_plugins) StdoutLine: {'line': b'[100%] Built target gazebo_ros_velodyne_laser\n'}
+[33.022670] (velodyne_gazebo_plugins) CommandEnded: {'returncode': 0}
+[33.039769] (-) TimerEvent: {}
+[33.054739] (velodyne_gazebo_plugins) JobProgress: {'identifier': 'velodyne_gazebo_plugins', 'progress': 'install'}
+[33.056230] (velodyne_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/segula/dev_ws/build/velodyne_gazebo_plugins'], 'cwd': '/home/segula/dev_ws/build/velodyne_gazebo_plugins', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/velodyne_gazebo_plugins'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[33.064880] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.065492] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[33.065904] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.sh\n'}
+[33.076680] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.dsv\n'}
+[33.086536] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/velodyne_gazebo_plugins\n'}
+[33.096235] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/velodyne_gazebo_plugins\n'}
+[33.105747] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.sh\n'}
+[33.117010] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.dsv\n'}
+[33.126588] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.sh\n'}
+[33.135845] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.dsv\n'}
+[33.139914] (-) TimerEvent: {}
+[33.147499] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.bash\n'}
+[33.157016] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.sh\n'}
+[33.166345] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.zsh\n'}
+[33.174973] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.dsv\n'}
+[33.185615] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.dsv\n'}
+[33.195450] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/ament_index/resource_index/packages/velodyne_gazebo_plugins\n'}
+[33.205097] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[33.213995] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[33.222461] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[33.230839] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig.cmake\n'}
+[33.240057] (-) TimerEvent: {}
+[33.240685] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig-version.cmake\n'}
+[33.248859] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.xml\n'}
+[33.260563] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h\n'}
+[33.270808] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_gazebo_plugins/lib/libgazebo_ros_velodyne_laser.so\n'}
+[33.281805] (velodyne_gazebo_plugins) CommandEnded: {'returncode': 0}
+[33.338932] (velodyne_gazebo_plugins) JobEnded: {'identifier': 'velodyne_gazebo_plugins', 'rc': 0}
+[33.340986] (-) TimerEvent: {}
+[33.341126] (velodyne_simulator) JobStarted: {'identifier': 'velodyne_simulator'}
+[33.355749] (velodyne_simulator) JobProgress: {'identifier': 'velodyne_simulator', 'progress': 'cmake'}
+[33.357283] (velodyne_simulator) Command: {'cmd': ['/usr/bin/cmake', '/home/segula/dev_ws/src/velodyne_simulator', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/segula/dev_ws/install/velodyne_simulator'], 'cwd': '/home/segula/dev_ws/build/velodyne_simulator', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/segula/dev_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/velodyne_gazebo_plugins:/home/segula/dev_ws/install/velodyne_description:/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/velodyne_simulator'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/velodyne_gazebo_plugins:/home/segula/dev_ws/install/velodyne_description:/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[33.427891] (velodyne_simulator) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[33.441106] (-) TimerEvent: {}
+[33.502257] (velodyne_simulator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[33.517053] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[33.541214] (-) TimerEvent: {}
+[33.614865] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[33.641309] (-) TimerEvent: {}
+[33.646701] (velodyne_simulator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[33.647755] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[33.649377] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[33.658681] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[33.741502] (-) TimerEvent: {}
+[33.768196] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[33.777137] (velodyne_simulator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[33.777569] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[33.777971] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[33.780548] (velodyne_simulator) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[33.841641] (-) TimerEvent: {}
+[33.942150] (-) TimerEvent: {}
+[33.991186] (velodyne_simulator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[34.042302] (-) TimerEvent: {}
+[34.067257] (velodyne_simulator) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[34.119824] (velodyne_simulator) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[34.142460] (-) TimerEvent: {}
+[34.198806] (velodyne_simulator) StdoutLine: {'line': b'-- Configuring done\n'}
+[34.201911] (velodyne_simulator) StdoutLine: {'line': b'-- Generating done\n'}
+[34.202815] (velodyne_simulator) StdoutLine: {'line': b'-- Build files have been written to: /home/segula/dev_ws/build/velodyne_simulator\n'}
+[34.207159] (velodyne_simulator) CommandEnded: {'returncode': 0}
+[34.209480] (velodyne_simulator) JobProgress: {'identifier': 'velodyne_simulator', 'progress': 'build'}
+[34.209673] (velodyne_simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/segula/dev_ws/build/velodyne_simulator', '--', '-j16', '-l16'], 'cwd': '/home/segula/dev_ws/build/velodyne_simulator', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/segula/dev_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/velodyne_gazebo_plugins:/home/segula/dev_ws/install/velodyne_description:/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/velodyne_simulator'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/velodyne_gazebo_plugins:/home/segula/dev_ws/install/velodyne_description:/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[34.242612] (-) TimerEvent: {}
+[34.256499] (velodyne_simulator) CommandEnded: {'returncode': 0}
+[34.284807] (velodyne_simulator) JobProgress: {'identifier': 'velodyne_simulator', 'progress': 'install'}
+[34.285880] (velodyne_simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/segula/dev_ws/build/velodyne_simulator'], 'cwd': '/home/segula/dev_ws/build/velodyne_simulator', 'env': OrderedDict([('USER', 'segula'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/segula/dev_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('OLDPWD', '/home/segula/dev_ws'), ('HOME', '/home/segula'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/segula/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('COLCON_PREFIX_PATH', '/home/segula/dev_ws/install'), ('LOGNAME', 'segula'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'segula'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/segula-HP-Z840-Workstation:@/tmp/.ICE-unix/1690,unix/segula-HP-Z840-Workstation:/tmp/.ICE-unix/1690'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d34a137_0574_420d_a6b9_8dcbf8f8146a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('DISPLAY', ':0'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.224'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D0Y7T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/segula/dev_ws/install/velodyne_gazebo_plugins:/home/segula/dev_ws/install/velodyne_description:/home/segula/dev_ws/install/articubot_one:/opt/ros/iron'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/segula/dev_ws/build/velodyne_simulator'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=14f97e1a0952cff1685d1d0f66e89d76'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/segula/dev_ws/install/velodyne_gazebo_plugins:/home/segula/dev_ws/install/velodyne_description:/home/segula/dev_ws/install/articubot_one:/opt/ros/iron')]), 'shell': False}
+[34.293904] (velodyne_simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.294441] (velodyne_simulator) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[34.294842] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/ament_index/resource_index/package_run_dependencies/velodyne_simulator\n'}
+[34.304754] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/ament_index/resource_index/parent_prefix_path/velodyne_simulator\n'}
+[34.315378] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/environment/ament_prefix_path.sh\n'}
+[34.325055] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/environment/ament_prefix_path.dsv\n'}
+[34.334660] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/environment/path.sh\n'}
+[34.342719] (-) TimerEvent: {}
+[34.346171] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/environment/path.dsv\n'}
+[34.356465] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/local_setup.bash\n'}
+[34.366131] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/local_setup.sh\n'}
+[34.375692] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/local_setup.zsh\n'}
+[34.386619] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/local_setup.dsv\n'}
+[34.396302] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/package.dsv\n'}
+[34.406030] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/ament_index/resource_index/packages/velodyne_simulator\n'}
+[34.415691] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/cmake/velodyne_simulatorConfig.cmake\n'}
+[34.424995] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/cmake/velodyne_simulatorConfig-version.cmake\n'}
+[34.434312] (velodyne_simulator) StdoutLine: {'line': b'-- Symlinking: /home/segula/dev_ws/install/velodyne_simulator/share/velodyne_simulator/package.xml\n'}
+[34.442863] (-) TimerEvent: {}
+[34.445762] (velodyne_simulator) CommandEnded: {'returncode': 0}
+[34.504425] (velodyne_simulator) JobEnded: {'identifier': 'velodyne_simulator', 'rc': 0}
+[34.506023] (-) EventReactorShutdown: {}
