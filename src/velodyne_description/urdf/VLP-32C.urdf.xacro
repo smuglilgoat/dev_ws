@@ -59,7 +59,7 @@
       <xacro:if value="${gpu}">
         <sensor type="gpu_ray" name="${name}-VLP32C">
           <pose>0 0 0 0 0 0</pose>
-          <visualize>false</visualize>
+          <visualize>true</visualize>
           <update_rate>${hz}</update_rate>
           <ray>
             <scan>
@@ -113,7 +113,7 @@
       <xacro:unless value="${gpu}">
         <sensor type="ray" name="${name}-VLP32C">
           <pose>0 0 0 0 0 0</pose>
-          <visualize>false</visualize>
+          <visualize>true</visualize>
           <update_rate>${hz}</update_rate>
           <ray>
             <scan>

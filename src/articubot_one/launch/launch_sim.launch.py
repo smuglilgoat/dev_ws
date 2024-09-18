@@ -1,11 +1,12 @@
 import os
 
 from ament_index_python.packages import get_package_share_directory
-
+import ament_index_python.packages
 
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+import launch_ros.actions
 
 from launch_ros.actions import Node
 
@@ -19,6 +20,15 @@ def generate_launch_description():
 
     package_name='articubot_one' #<--- CHANGE ME
 
+    rviz_config = os.path.join(
+        ament_index_python.packages.get_package_share_directory('articubot_one'),
+        'config', 'main.rviz')
+
+    rviz = launch_ros.actions.Node(package='rviz2',
+                              executable='rviz2',
+                              output='both',
+                              arguments=['-d', rviz_config])
+    
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
@@ -92,6 +102,7 @@ def generate_launch_description():
         joystick,
         twist_mux,
         gazebo,
+        rviz,
         spawn_entity,
         diff_drive_spawner,
         joint_broad_spawner
