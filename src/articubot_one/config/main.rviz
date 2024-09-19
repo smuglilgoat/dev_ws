@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Camera1/Visibility1
         - /PointCloud21
-        - /PointCloud21/Status1
         - /PointCloud21/Topic1
       Splitter Ratio: 0.5
     Tree Height: 543
@@ -228,8 +227,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 1.2414422035217285
-        Min Value: -0.03978613018989563
+        Max Value: 1.4514307975769043
+        Min Value: -0.038201361894607544
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -255,7 +254,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /velodyne_points
+        Value: /filtered_clouds
       Use Fixed Frame: true
       Use rainbow: true
       Value: true

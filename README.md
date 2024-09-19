@@ -27,6 +27,7 @@ To get started with this project, you need to install the necessary ROS 2 packag
    sudo apt install v4l-utils ros-iron-v4l2-camera ros-iron-image-transport-plugins
    sudo apt install ros-iron-ros2-control ros-iron-ros2-controllers ros-iron-gazebo-ros2-control
    sudo apt-get install ros-iron-twist-mux
+   sudo apt install ros-iron-pcl-ros
    ```
 
 3. **Configure your Joystick**:
@@ -43,11 +44,6 @@ Choose the enable buttons in ```src/articubot_one/config/joystick.yaml```
 1. **Running the simulation in Gazebo**:
    ```bash
    ros2 launch articubot_one launch_sim.launch.py world:=src/articubot_one/worlds/obstacles.world
-   ```
-
-2. **Running RVIZ**:
-   ```bash
-   ros2 run rviz2 rviz2 -d src/articubot_one/config/map.rviz --ros-args -p use_sim_time:=true
    ```
 
 ## Additional Information
